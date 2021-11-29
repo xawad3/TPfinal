@@ -67,6 +67,18 @@ footer {
     margin-top: 50px;
 }
 
+/*Css Header*/
+
+header{
+    background-color: #023047;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+header input{
+    height: 50px;
+    align-self: center;
+}
 
 
 
