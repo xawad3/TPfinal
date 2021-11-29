@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="">
+        <title>titre</title>
+    </head>
+    <body>
+            <h1>Nous contacter:</h1>
+
+            <fieldset>
+                <legend>Une chose à nous dire ? </legend>
+                <form action="nophp.php">
+                    <div class="monform">
+                        <label form="nom">Nom <span>*</span>:</label>
+                        <input type="text" required id="nom" name="nom" maxlength="20" minlength="2" placeholder="ex:Doe">
+                    </div>
+
+                    <div class="monform">
+                        <label form="prénom">Prénom <span>*</span>:</label>
+                        <input type="text" required id="prénom" name="prénom" maxlength="20" minlength="2" placeholder="ex:Jane">
+                    </div>
+
+                    <div class="monform">
+                        <label form="nom">Age <span>*</span>:</label>
+                        <input type="number" required id="age" name="age" min="18" placeholder="25">
+                    </div>
+
+                    <div class="monform">
+                        <label form="tel">Téléphone <span>*</span>:</label>
+                        <input type="number" required id="tel" name="tel" maxlength="10" placeholder="0645784123">
+                    </div>
+
+                    <div class="monform">
+                        <label form="file">Mon CV:</label>
+                        <input type="file" id="file" name="file" accept=".pdf, .doc, .docx">
+                    </div>
+
+                    <div class="monform">
+                        <label form="Commentaire">Votre message <span>*</span>:</label>
+                        <textarea id="com" required name="com" rows="10" cols="70">Vos questions, vos motivations, etc.</textarea>
+                    </div>
+                </form>
+
+
+
+            </fieldset>
+
+
+
+
+
+    <footer>
+    </footer>
+    </body>
+
+</html>
