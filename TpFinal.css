@@ -9,6 +9,8 @@
 
 /*Css Formulaire*/
 
+
+
 .formulaire { 
     display: flex;
     justify-content: center;
@@ -42,7 +44,7 @@ label {
 
 
   input[type=button], input[type=submit], input[type=reset] {
-    background-color: #FB8500;
+    background-color: #FFA43C;
     border: none;
     color: white;
     padding: 16px 32px;
