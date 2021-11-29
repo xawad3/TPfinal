@@ -9,7 +9,9 @@
 
 /*Css Formulaire*/
 
-
+h1 {
+    text-align: center;
+}
 
 .formulaire { 
     display: flex;
@@ -44,7 +46,7 @@ label {
 
 
   input[type=button], input[type=submit], input[type=reset] {
-    background-color: #FFA43C;
+    background-color: #FF951B;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -54,7 +56,7 @@ label {
   }
 
   span { 
-    color: indianred;
+    color: red;
 
     }
 
@@ -79,6 +81,21 @@ header input{
     height: 50px;
     align-self: center;
 }
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 
 
