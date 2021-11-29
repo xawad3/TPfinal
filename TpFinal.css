@@ -1,6 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    background-color: #023047;
+    background-color: #8ECAE6;
 }
 
 
@@ -20,6 +20,11 @@ input {
     width: 150px;
 
 
+
+}
+
+div {
+    margin-top: 10px;
 
 }
 
