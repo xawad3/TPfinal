@@ -83,8 +83,7 @@ a {
 }
 
 
-/*Css Header*/
-
+/*Css Header Index*/
 header input{
     height: 50px;
     align-self: center;
@@ -103,13 +102,25 @@ header {
     z-index:1;
     margin-top: -65px;
     }
-body div{
+
+/*Css Body Index */
+#Btext{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 70px;
 }
 #Bphoto{
     margin-top: 75px;
+    float: left;
 }
+#Bvideo{
+    align-self: flex-end;    
+}
+h2{
+    color: #023047;
+}
+
 
 
 
