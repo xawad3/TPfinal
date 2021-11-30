@@ -50,6 +50,7 @@ input[type=button], input[type=submit], input[type=reset] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+
   }
 
   /*au passage de la souris, on gère l'opacité de la couleur des boutons*/
@@ -76,17 +77,13 @@ input[type=submit]:hover, input[type=reset]:hover {
 
 /*CSS MAP*/
 
-.carte {
+.carte { 
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    /* width: 500px; */
-    
-    animation-duration: 5s;
+    animation-duration: 5s; /*ici commence l'animation bas de page*/
     animation-name: slidein;
-    
-    /* animation-iteration-count: infinite; */
-    /* animation-direction: alternate; */
-  }
+    }
   
   @keyframes slidein {
     from {
@@ -98,7 +95,7 @@ input[type=submit]:hover, input[type=reset]:hover {
       margin-left: 0%;
       width: 100%;
     }
-  }
+  }                         /*ici termine animation bas de page*/
 
   .box {
       width: 250px;
@@ -108,7 +105,24 @@ input[type=submit]:hover, input[type=reset]:hover {
     margin-left: 20px;
 }
 
+h3 {
+    color: #FFB35C;
+    margin-bottom: 5px;
 
+}
+
+h3 p {
+    text-align: justify;
+}
+
+.box {
+    margin: 0 0 10px 0;
+    width: 400px;
+}
+
+#email:hover {
+font-weight: bold;
+}
 
 
 
