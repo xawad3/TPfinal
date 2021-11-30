@@ -130,11 +130,15 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 70px;
+    margin-top: 72px;
+    text-align: justify;
+    width: 1100px;
+    height: auto;
 }
 #Bphoto{
     margin-top: 75px;
     float: left;
+    margin-left: 136px;
 }
 #Bvideo{
     align-self: flex-end;    
