@@ -1,34 +1,31 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    background-color: #8ECAE6;
+    background-color: #FFF0DE;
 }
 
 
 
 
 
-/*Css Formulaire*/
+/*CSS FORMULAIRE*/
 
-h1 {
+body h1 {
     text-align: center;
 }
 
 .formulaire { 
     display: flex;
     justify-content: center;
+}
 
+/*ici onfère l'espace entre chaque champ*/
+.monform {
+margin-top: 10px;
 }
 
 input {
     display: inline-block;
     width: 150px;
-
-
-
-}
-
-div {
-    margin-top: 10px;
 
 }
 
@@ -36,17 +33,11 @@ label {
     display: inline-block;
     text-align: justify-all; 
     width: 150px;
-
-
 }
 
-.fin { 
-    margin-top: 10px;
-}
-
-
-  input[type=button], input[type=submit], input[type=reset] {
-    background-color: #FF951B;
+/*correspond aux boutons du formulaire + autre boutons du site au besoin*/
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #023047;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -55,12 +46,38 @@ label {
     cursor: pointer;
   }
 
-  span { 
+  /*au passage de la souris, on gère l'opacité de la couleur des boutons*/
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #023047a6
+  }
+
+#tete {
+    border-color:#FF951B ;
+    width: 400px;
+    height: auto;
+
+}
+
+/*les champs obligatoires du formulaire*/
+.monform span { 
     color: red;
+}
 
-    }
+.fin { 
+    margin-top: 10px;
 
-/*Css Footer*/
+}
+
+/*CSS MAP*/
+
+.carte {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+/*CSS FOOTER*/
 
 footer {
     display: flex;
@@ -83,8 +100,7 @@ a {
 }
 
 
-/*Css Header*/
-
+/*Css Header Index*/
 header input{
     height: 50px;
     align-self: center;
@@ -103,13 +119,25 @@ header {
     z-index:1;
     margin-top: -65px;
     }
-body div{
+
+/*Css Body Index */
+#Btext{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 70px;
 }
 #Bphoto{
     margin-top: 75px;
+    float: left;
 }
+#Bvideo{
+    align-self: flex-end;    
+}
+h2{
+    color: #023047;
+}
+
 
 
 
