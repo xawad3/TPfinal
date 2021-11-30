@@ -7,20 +7,18 @@
 
 
 
-/*Css Formulaire*/
+/*CSS FORMULAIRE*/
 
-h1 {
+body h1 {
     text-align: center;
 }
 
 .formulaire { 
     display: flex;
     justify-content: center;
-
 }
 
-
-
+/*ici onfère l'espace entre chaque champ*/
 .monform {
 margin-top: 10px;
 }
@@ -31,29 +29,14 @@ input {
 
 }
 
-
-
-/* div {
-    margin-top: 10px;
-
-} */
-
 label {
     display: inline-block;
     text-align: justify-all; 
     width: 150px;
-
-
-
 }
 
-.fin { 
-    margin-top: 10px;
-
-}
-
-
-  input[type=button], input[type=submit], input[type=reset] {
+/*correspond aux boutons du formulaire + autre boutons du site au besoin*/
+input[type=button], input[type=submit], input[type=reset] {
     background-color: #023047;
     border: none;
     color: white;
@@ -63,7 +46,8 @@ label {
     cursor: pointer;
   }
 
-  input:hover {
+  /*au passage de la souris, on gère l'opacité de la couleur des boutons*/
+input[type=submit]:hover, input[type=reset]:hover {
     background-color: #023047a6
   }
 
@@ -74,13 +58,17 @@ label {
 
 }
 
-  span { 
+/*les champs obligatoires du formulaire*/
+.monform span { 
     color: red;
+}
 
+.fin { 
+    margin-top: 10px;
 
-    }
+}
 
-/*Css Map*/
+/*CSS MAP*/
 
 .carte {
     display: flex;
@@ -89,7 +77,7 @@ label {
     
 }
 
-/*Css Footer*/
+/*CSS FOOTER*/
 
 footer {
     display: flex;
