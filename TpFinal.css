@@ -35,14 +35,17 @@ label {
 
 /*correspond aux boutons du formulaire + autre boutons du site au besoin*/
 input[type=button], input[type=submit], input[type=reset] {
-  background-color: #023047;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+
+    background-color: #023047;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+  }
+
 
 /*au passage de la souris, on gère l'opacité de la couleur des boutons*/
 input[type=submit]:hover, input[type=reset]:hover {
@@ -65,15 +68,28 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 
 /*CSS MAP*/
-.carte {
-  display: flex;
-  justify-content: center;
-  /* width: 500px; */
-  animation-duration: 5s;
-  animation-name: slidein;
-  /* animation-iteration-count: infinite; */
-  /* animation-direction: alternate; */
-}
+
+
+.carte { 
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    animation-duration: 5s; /*ici commence l'animation bas de page*/
+    animation-name: slidein;
+    }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }                         /*ici termine animation bas de page*/
+
 
 @keyframes slidein {
   from {
@@ -87,13 +103,27 @@ input[type=submit]:hover, input[type=reset]:hover {
   }
 }
 
-.box {
-  width: 250px;
+h3 {
+    color: #FFB35C;
+    margin-bottom: 5px;
+
 }
 
-.mail {
-  margin-left: 20px;
+h3 p {
+    text-align: justify;
 }
+
+.box {
+    margin: 0 0 10px 0;
+    width: 400px;
+}
+
+#email:hover {
+font-weight: bold;
+}
+
+
+
 
 /*CSS FOOTER*/
 footer {
