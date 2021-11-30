@@ -12,6 +12,7 @@
 body h1 {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .formulaire { 
@@ -57,7 +58,7 @@ input[type=submit]:hover, input[type=reset]:hover {
   }
 
 #tete {
-    border-color:#FF951B ;
+    border-color:grey ;
     width: 400px;
     height: auto;
 
@@ -78,9 +79,38 @@ input[type=submit]:hover, input[type=reset]:hover {
 .carte {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    /* width: 500px; */
     
+    animation-duration: 5s;
+    animation-name: slidein;
+    
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .box {
+      width: 250px;
+  }
+
+.mail { 
+    margin-left: 20px;
 }
+
+
+
+
 
 /*CSS FOOTER*/
 
@@ -89,6 +119,7 @@ footer {
     grid-gap:50px;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 a:link {
@@ -111,7 +142,7 @@ header input{
     align-self: center;
 }
 header {
-    background-color: #023047;
+    background-color: #023047e3;
     height: 100px;
     display: flex;
     justify-content: space-evenly;
@@ -147,7 +178,6 @@ h2{
 
 
 
-
 header input[type=button] {
         background-color: #FFB35C;
         border: none;
@@ -156,10 +186,12 @@ header input[type=button] {
         text-decoration: none;
         margin: 4px 2px;
         cursor: pointer;
+        border-radius: 5px;
         
       }
 
-
-
+      input[type=button]:hover {
+        background-color: #FF951B
+      }
 
 
