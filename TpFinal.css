@@ -130,21 +130,44 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 72px;
+    margin-top: 75px;
+    padding-left: 25px;
     text-align: justify;
-    width: 1100px;
+    width: 1140px;
     height: auto;
 }
 #Bphoto{
     margin-top: 75px;
     float: left;
     margin-left: 136px;
+    border: solid 2px;
+    border-radius: 5px;
 }
 #Bvideo{
-    align-self: flex-end;    
+    align-self: flex-end;
+    border: solid 2px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 h2{
     color: #023047;
+}
+#imglogo{
+    height: 240px;
+    width: 240px;
+}
+#imglogo:hover{
+    height: 250px;
+    width: 250px;
+}
+#Blogo{
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+#LV{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
