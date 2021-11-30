@@ -85,16 +85,34 @@ a {
 
 /*Css Header*/
 
-header{
-    background-color: #023047;
-    display: flex;
-    justify-content: space-evenly;
-    
-}
 header input{
     height: 50px;
     align-self: center;
 }
+header {
+    background-color: #023047;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 65px;
+    position: relative; 
+    }
+    
+    .image {
+    position: relative; 
+    z-index:1;
+    margin-top: -65px;
+    }
+body div{
+    display: flex;
+    flex-direction: column;
+}
+#Bphoto{
+    margin-top: 75px;
+}
+
+
+
 
 
 
