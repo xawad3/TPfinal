@@ -12,6 +12,7 @@
 body h1 {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .formulaire { 
@@ -57,7 +58,7 @@ input[type=submit]:hover, input[type=reset]:hover {
   }
 
 #tete {
-    border-color:#FF951B ;
+    border-color:grey ;
     width: 400px;
     height: auto;
 
@@ -78,9 +79,38 @@ input[type=submit]:hover, input[type=reset]:hover {
 .carte {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    /* width: 500px; */
     
+    animation-duration: 5s;
+    animation-name: slidein;
+    
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .box {
+      width: 250px;
+  }
+
+.mail { 
+    margin-left: 20px;
 }
+
+
+
+
 
 /*CSS FOOTER*/
 
@@ -89,6 +119,7 @@ footer {
     grid-gap:50px;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 a:link {
@@ -111,7 +142,7 @@ header input{
     align-self: center;
 }
 header {
-    background-color: #023047;
+    background-color: #023047e3;
     height: 100px;
     display: flex;
     justify-content: space-evenly;
@@ -130,19 +161,45 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 70px;
+    margin-top: 75px;
+    padding-left: 25px;
+    text-align: justify;
+    width: 1140px;
+    height: auto;
 }
 #Bphoto{
     margin-top: 75px;
     float: left;
+    margin-left: 136px;
+    border: solid 2px;
+    border-radius: 5px;
 }
 #Bvideo{
-    align-self: flex-end;    
+    align-self: flex-end;
+    border: solid 2px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 h2{
     color: #023047;
 }
-
+#imglogo{
+    height: 240px;
+    width: 240px;
+}
+#imglogo:hover{
+    height: 250px;
+    width: 250px;
+}
+#Blogo{
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+#LV{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 
@@ -156,10 +213,12 @@ header input[type=button] {
         text-decoration: none;
         margin: 4px 2px;
         cursor: pointer;
+        border-radius: 5px;
         
       }
 
-
-
+      input[type=button]:hover {
+        background-color: #FF951B
+      }
 
 
