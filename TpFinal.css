@@ -1,9 +1,9 @@
 * {
     font-family: 'Montserrat', sans-serif;
     background-color: #FFF0DE;
+    margin:0;
+    padding: 0;
 }
-
-
 
 
 
@@ -11,6 +11,7 @@
 
 body h1 {
     text-align: center;
+    margin-top: 50px;
 }
 
 .formulaire { 
@@ -146,6 +147,17 @@ h2{
 
 
 
+
+header input[type=button] {
+        background-color: #FFB35C;
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        
+      }
 
 
 
