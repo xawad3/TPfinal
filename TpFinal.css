@@ -27,12 +27,16 @@ input {
     display: inline-block;
     width: 150px;
 
+
 }
+
+
 
 label {
     display: inline-block;
     text-align: justify-all; 
     width: 150px;
+    
 }
 
 /*correspond aux boutons du formulaire + autre boutons du site au besoin*/
