@@ -258,6 +258,13 @@ input[type=button]:hover {
 
 
 /* css des pages pageHtml.html-pageCss.html-pageJavaScript.html-pageApi.html */
+
+h5 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 .grille {
     display: grid;
     grid-template-columns: 1fr 1fr;
