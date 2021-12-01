@@ -23,6 +23,7 @@ body h1 {
 /*ici onfère l'espace entre chaque champ*/
 .monform {
 margin-top: 10px;
+font-weight: bold;
 }
 
 input {
@@ -32,7 +33,9 @@ input {
 
 }
 
-
+#doe {
+  background-color: #ffd09b; /*couleur fond entrée formulaire*/
+}
 
 label {
     display: inline-block;
