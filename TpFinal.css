@@ -420,3 +420,37 @@ h5 {
 #label3{
   width: 300px;
 }
+/*DEBUT RESPONSIVE*/
+
+@media only screen and (max-width:1000px){
+ #Btext{
+   width: 800px;
+   height: auto;
+ }
+ #Bphoto{
+   display: flex;
+   align-items: center;
+ }
+ .carte { 
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation-duration: 5s; /*ici commence l'animation bas de page*/
+  animation-name: slidein;
+  }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} 
+.box{
+  width: 200px;
+}                        /*ici termine animation bas de page*/
+}
