@@ -32,31 +32,38 @@
     </div>
 
     <div class="presentation2">
-      <h4 id="pre1">Les feuilles de style en cascade,</h4>
       <p id="pre1">
-       généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML .
-      Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.
+        À la différence de l’HTML, le CSS ne permet pas de créer une page web.
+
+        C’est aussi un langage côté client. C’est donc votre navigateur qui lit le code CSS et le transpose pour mettre en forme le fichier HTML. Il peut exister des problèmes de compatibilité. Mais, aujourd’hui, à part si votre navigateur web date de l’Âge de pierre, c’est plutôt rare.
+        
+        Vous avez plusieurs possibilités pour faire appel au CSS :
+        
+        directement dans une balise de votre code HTML,
+        dans la balise head de votre page web, entre une balise "style"
+        dans un ou plusieurs fichiers CSS.
       </p>
     </div>
 
     <div class="video2">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/_-KEFeWLVtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <iframe id="Bvideo" width="560" height="315" src="https://www.youtube.com/embed/_-KEFeWLVtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
 
     <div class="explication2">
       <p id="pre1">
-        De la même façon que HTML, CSS n'est pas vraiment un langage de programmation. C'est un langage de feuille de style, c'est-à-dire qu'il permet d'appliquer des styles sur différents éléments sélectionnés dans un document HTML. Par exemple, on
-        peut sélectionner tous les éléments d'une page HTML qui sont paragraphes et afficher leurs textes en rouge avec ce code CSS.
+        L'ensemble des fonctionnalités CSS est si important que le langage et ses spécifications ont été découpés en modules. En naviguant dans le site MDN vous croiserez ces modules : quand des pages de documentation sont regroupées, c'est la plupart du temps qu'elles réfèrent à un même module. Par exemple, jetez un œil à la référence MDN pour le module Backgrounds and Borders, vous y trouverez ce pour quoi il a été conçu, les différentes propriétés et fonctionnalités qu'il regroupe. Vous trouverez aussi des liens vers la spécification CSS qui définit cette technologie (voir plus bas).
+        À ce stade, inutile de se préoccuper de la structure de CSS (même s'il est parfois plus simple de trouver une information quand on a compris qu'une propriété est reliée à une famille d'autres propriétés au sein d'un même module de spécification).
       </p>
     </div>
     <div class="exemple2">
       <!-- <p>En écrivant ces trois lignes de code CSS dans le fichier adequat, le texte de votre paragraphe s'affichera en rouge.</p>
       <img src="exempleCSS.png" alt="image_exemple_css"> -->
-      <label for="commentaire"></label>
-      <p>En écrivant ces trois lignes de code CSS dans le fichier adequat,
-        le texte de votre paragraphe s'affichera en rouge.<br></p>
-      <textarea name="commentaire" rows="4" cols="15">p{
+      <label id="label2" for="commentaire">En écrivant ces trois lignes de code CSS dans le fichier adequat,
+        le texte de votre paragraphe s'affichera en rouge.</label><br>
+      
+      
+      <textarea name="commentaire" rows="4" cols="15" disabled>p{
             color:red;
           }
             </textarea>

@@ -32,30 +32,38 @@
     </div>
 
     <div class="presentation1">
+      <h4 id="pre1">Une définition générale</h4>
       <p id="pre1">
-      <h4 id="pre1">JavaScript</h4> est un langage de programmation qui permet d'implémenter des mécanismes complexes sur une page web. À chaque fois qu'une page web fait plus que simplement afficher du contenu statique
-      JavaScript a de bonnes chances d'être impliqué. C'est la troisième couche des technologies standards du web, les deux premières (HTML et CSS)
+      JavaScript est un langage de programmation qui permet d'implémenter des mécanismes complexes sur une page web. À chaque fois qu'une page web fait plus que simplement afficher du contenu statique — afficher du contenu mis à jour à des temps déterminés, des cartes interactives, des animations 2D/3D, des menus vidéo défilants, ou autre, JavaScript a de bonnes chances d'être impliqué. C'est la troisième couche des technologies standards du web, les deux premières (HTML et CSS) étant couvertes bien plus en détail dans d'autres tutoriels sur MDN.
       </p>
     </div>
 
     <div class="video1">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/XkvrHQNmigs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <iframe id="Bvideo" width="560" height="315" src="https://www.youtube.com/embed/XkvrHQNmigs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
 
     <div class="explication1">
+      <h4 id="pre1">Que peut-il vraiment faire ?</h4>
       <p id="pre1">
-        JavaScript est d'une incroyable flexibilité. Vous pouvez commencer petit, avec des carrousels, des galeries d'images, des variations de mises en page et des réponses aux clics de boutons. Avec plus d'expérience, vous serez en mesure de créer
-        des jeux, des graphiques 2D et 3D animés, des applications complètes fondées sur des bases de données et bien plus encore !
+        Le cœur de JavaScript est constitué de fonctionnalités communes de programmation permettant de :
+        stocker des valeurs utiles dans des variables. Dans l'exemple plus haut, nous demandons un nouveau nom à l'utilisateur puis le stockons dans une variable appelée name.
+        faire des opérations sur des morceaux de texte (appelés en programmation « chaînes de caractères » ou « strings » en anglais). Dans l'exemple plus haut, nous prenons la chaîne de caractères "Player 1: " et lui adjoignons la variable name pour créer l'étiquette ''Player 1: Chris".
+        exécuter du code en réponse à certains événements se produisant sur une page web. Dans l'exemple, nous avons utilisé un événement (« event ») click (en-US) pour détecter quand l'utilisateur clique sur le bouton ; on exécute alors le code qui met à jour l'étiquette.
+        Et bien plus encore !
       </p>
     </div>
     <div class="exemple1">
-      <p>Voici un exemple du pouvoir de JS;
-        <br>
-        en mettant ses quelque lignes de code cela fera apparaitre un pop-up dès lors que l'on cliquera sur le bouton ;)
-      </p>
-      <br>
-      <img src="codeJs.png" alt="image_exemple_js">
+      <label id="label3" for="commentaire">Voici un exemple du pouvoir de JS; en mettant ses quelque lignes de code cela fera apparaitre un pop-up dès lors que l'on cliquera sur le bouton ;)</label><br/>
+      <textarea name="commentaire" rows="7" cols="47" disabled>
+        <script language="javascript">
+          function afficheMessage() {
+            alert('Première ligne...\nDeuxième ligne...');
+
+          }
+
+        </script>
+        </textarea>
     </div>
     <div class="visu">
       <img src="popup.png" alt="visual">
