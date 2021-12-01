@@ -341,7 +341,7 @@ input[type=button]:hover {
   }
   
   .presentation2 {
-    width: 32%;
+    width: 70%;
     height: auto;
     grid-column: 1;
     grid-row: 1;
@@ -361,7 +361,7 @@ input[type=button]:hover {
   }
   
   .explication2 {
-    width: 32%;
+    width: 70%;
     height: auto;
     grid-column: 2;
     grid-row: 2;
