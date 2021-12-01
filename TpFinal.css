@@ -294,6 +294,8 @@ input[type=button]:hover {
     grid-row: 1;
     align-self: center;
     border: 2.5px solid black;
+    border-radius: 5px;
+    background-color:#ffd09b;
   
   }
   
@@ -314,6 +316,7 @@ input[type=button]:hover {
     justify-self: center;
     align-self: center;
     border: 2.5px solid black;
+    border-radius: 5px;
   }
   
   .exemple1 {
@@ -323,6 +326,7 @@ input[type=button]:hover {
     grid-row: 3;
     justify-self: end;
     align-self: center;
+    border-radius: 5px;
   }
   
   .logo2 {
@@ -342,6 +346,7 @@ input[type=button]:hover {
     justify-self: end;
     align-self: center;
     border: 2.5px solid black;
+    border-radius: 5px;
   }
   
   .video2 {
@@ -361,15 +366,20 @@ input[type=button]:hover {
     justify-self: start;
     align-self: center;
     border: 2.5px solid black;
+    border-radius: 5px;
   }
   
   .exemple2 {
-    width: 32%;
+    width: 50%;
     height: auto;
     grid-column: 1;
     grid-row: 3;
     justify-self: end;
     align-self: center;
+  }
+  .exemple21{
+    border: 2.5px solid black;
+    border-radius: 5px;
   }
   
   .visu {
@@ -378,4 +388,8 @@ input[type=button]:hover {
     grid-column: 2;
     grid-row: 3;
     align-self: center;
+  }
+
+  #pre1{
+    background-color:#ffd09b;
   }
