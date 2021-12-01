@@ -240,3 +240,127 @@ input[type=button]:hover {
 }
 
 
+/* css des pages pageHtml.html-pageCss.html-pageJavaScript.html-pageApi.html */
+.grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px 1fr 1fr;
+  }
+  
+  /* modifie les logo html&js */
+  .logo1 {
+    width: 300px;
+    height: 300px;
+    width: auto;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  /* animation du logo */
+  .logo1 :hover {
+    transform: rotate(360deg);
+    transition: all 2s ease-in-out;
+  }
+  
+  .logo2 :hover {
+    transform: rotate(-360deg);
+    transition: all 2s ease-in-out;
+  }
+  /* fin aninmation du logo */
+  
+  .presentation1 {
+    font-size:  none;
+    width: 32%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    border: 2.5px solid black;
+  
+  }
+  
+  .video1 {
+    width: auto;
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .explication1 {
+    width: 32%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    border: 2.5px solid black;
+  }
+  
+  .exemple1 {
+    width: auto;
+    height: auto;
+    grid-column: 1/2;
+    grid-row: 3;
+    justify-self: end;
+    align-self: center;
+  }
+  
+  .logo2 {
+    width: 300px;
+    height: 300px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .presentation2 {
+    width: 32%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    border: 2.5px solid black;
+  }
+  
+  .video2 {
+    width: auto;
+    height: auto;
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .explication2 {
+    width: 32%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+    align-self: center;
+    border: 2.5px solid black;
+  }
+  
+  .exemple2 {
+    width: 32%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+    align-self: center;
+  }
+  
+  .visu {
+    width: 32%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+  }
