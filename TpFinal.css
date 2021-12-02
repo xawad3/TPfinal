@@ -20,7 +20,7 @@ body h1 {
     justify-content: center;
 }
 
-/*ici onfère l'espace entre chaque champ*/
+/*ici on gère l'espace entre chaque champ*/
 .monform {
 margin-top: 10px;
 font-weight: bold;
@@ -102,8 +102,12 @@ input[type=submit]:hover, input[type=reset]:hover {
     }
   }                         /*ici termine animation bas de page*/
 
+  /*espace "autres contactes Adrar"*/
+
   .box {
       width: 250px;
+      margin: 0 0 10px 0;
+      width: 400px;
   }
 
 .mail { 
@@ -118,11 +122,6 @@ h3 {
 
 h3 p {
     text-align: justify;
-}
-
-.box {
-    margin: 0 0 10px 0;
-    width: 400px;
 }
 
 #email:hover {
@@ -174,6 +173,23 @@ header {
     z-index:1;
     margin-top: -65px;
     }
+
+    /*bouton index*/
+    header input[type=button] {
+      background-color: #FFB35C;
+      border: none;
+      color: black;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+      
+    }
+
+    input[type=button]:hover {
+      background-color: #FF951B
+    }   
 
 /*Css Body Index */
 #Btext{
@@ -228,33 +244,18 @@ h2{
     transform: rotate(25deg);
     z-index:2;
 }
-#Blogo{
-    flex-wrap: wrap;
-    height: 310px;
-    width: 310px;
-    margin-top: 50px;
-}
+/*logo index*/
 #LV{
     display: flex;
     justify-content: space-evenly;
 }
-
-
-header input[type=button] {
-        background-color: #FFB35C;
-        border: none;
-        color: black;
-        padding: 16px 32px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 5px;
-        
-      }
-
-input[type=button]:hover {
-     background-color: #FF951B
+#Blogo{
+  flex-wrap: wrap;
+  height: 310px;
+  width: 310px;
+  margin-top: 50px;
 }
+
 
 
 /* css des pages pageHtml.html-pageCss.html-pageJavaScript.html-pageApi.html */
@@ -294,8 +295,9 @@ h5 {
     transition: all 2s ease-in-out;
   }
   /* fin aninmation du logo */
-  
-  .presentation1 {
+
+  /* mise en forme des elements de la page*/  
+  .presentation1{ /* presentation html/javaScript*/
     font-size:  none;
     width: 70%;
     height: auto;
@@ -308,7 +310,7 @@ h5 {
   
   }
   
-  .video1 {
+  .video1 { /* Page Html/JavaScript*/
     width: auto;
     height: auto;
     grid-column: 2;
@@ -317,7 +319,7 @@ h5 {
     align-self: center;
   }
   
-  .explication1 {
+  .explication1 { /* Page Html/JavaScript*/
     width: 70%;
     height: auto;
     grid-column: 1;
@@ -328,7 +330,7 @@ h5 {
     border-radius: 5px;
   }
   
-  .exemple1 {
+  .exemple1 { /* Page Html/JavaScript*/
     width: auto;
     height: auto;
     grid-column: 1/2;
@@ -338,7 +340,7 @@ h5 {
     border-radius: 5px;
   }
   
-  .logo2 {
+  .logo2 { /* Page CSS/API*/
     width: 300px;
     height: 300px;
     grid-column: 2;
@@ -347,7 +349,7 @@ h5 {
     align-self: center;
   }
   
-  .presentation2 {
+  .presentation2 { /* Page CSS/API*/
     width: 70%;
     height: auto;
     grid-column: 1;
@@ -358,7 +360,7 @@ h5 {
     border-radius: 5px;
   }
   
-  .video2 {
+  .video2 { /* Page CSS/API*/
     width: auto;
     height: auto;
     grid-column: 1;
@@ -367,7 +369,7 @@ h5 {
     align-self: center;
   }
   
-  .explication2 {
+  .explication2 { /* Page CSS/API*/
     width: 70%;
     height: auto;
     grid-column: 2;
@@ -378,7 +380,7 @@ h5 {
     border-radius: 5px;
   }
   
-  .exemple2 {
+  .exemple2 { /* Page CSS/API*/
     width: 50%;
     height: auto;
     grid-column: 1;
@@ -386,29 +388,31 @@ h5 {
     justify-self: end;
     align-self: center;
   }
-  .exemple21{
+  .exemple21{ /* Page CSS/API*/
     border: 2.5px solid black;
     border-radius: 5px;
   }
-  
-  .visu {
+  /*image exemple*/
+  .visu { 
     width: 32%;
     height: auto;
     grid-column: 2;
     grid-row: 3;
     align-self: center;
   }
-
+  /* couleur background texte*/
   #pre1{
     background-color:#ffd09b;
   }
 
-  code {
+ /* code {
     background-color: #eee;
     border-radius: 3px;
     font-family: courier, monospace;
     padding: 0 3px;
-}
+}*/
+
+/*Couleur exemple*/
 #label1,#label2,#label3{
   border: solid 2px;
   border-radius: 5px;
@@ -420,6 +424,24 @@ h5 {
 #label3{
   width: 300px;
 }
+
+.exemple1 textarea{
+  background: lightgray;
+  border: solid 2px;
+  border-radius: 2px;
+}
+.exemple2 textarea{
+  background: lightgray;
+  border: solid 2px;
+  border-radius: 2px;
+}
+/*Limitation de taille pour "textarea"*/
+textarea{
+  resize : none;
+}
+
+
+
 /*DEBUT RESPONSIVE*/
 
 @media only screen and (max-width:1000px){
@@ -447,10 +469,50 @@ h5 {
 
   to {
     margin-left: 0%;
-    width: 100%;
+    width: 100%;          /*ici termine animation bas de page*/
   }
 } 
-.box{
-  width: 200px;
-}                        /*ici termine animation bas de page*/
+  .box{
+    width: 200px;
+  }   
+  /*Nouvelle grille des pages HTML/CSS/JS/API*/
+  .grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.3fr;
+    margin-top: 70px;
+  } 
+  .explication1{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  } 
+  .video1{
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }    
+  .exemple1{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    justify-self: center;
+  }   
+  .explication2{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: center;
+  } 
+  .video2{
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }    
+  .exemple2{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    justify-self: center;
+  }   
+  .presentation2{
+    width: 70%;
+    margin-top: 50px;
+  } 
 }
+
+/*FIN RESPONSIVE*/
